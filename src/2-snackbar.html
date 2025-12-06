@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="snackbar-section">
+        <div class="container snackbar">
+          <a class="link-back" href="./index.html">Go back</a>
+          <h1 class="visually-hidden">Snackbar</h1>
+          <form class="form">
+            <label class="label-delay">
+              Delay (ms)
+              <input class="input-delay" type="number" name="delay" required />
+            </label>
+            <fieldset class="radio-choose">
+              <legend>State</legend>
+              <label>
+                <input type="radio" name="state" value="fulfilled" required />
+                Fulfilled
+              </label>
+              <label>
+                <input type="radio" name="state" value="rejected" required />
+                Rejected
+              </label>
+            </fieldset>
+            <button class="btn-form" type="submit">Create notification</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>

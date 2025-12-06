@@ -16,3 +16,202 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.list-link {
+  font-weight: 600;
+}
+
+.timer-section {
+  padding-top: 150px;
+}
+
+.link-back {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 50px;
+    font-weight: 500;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 2px;
+    transition: background-color .25s ease-in-out;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+}
+
+.input-box input {
+  padding: 8px 16px;
+    outline: none;
+    width: 272px;
+    height: 40px;
+    border-radius: 4px;
+    border-color: #808080;
+    margin-right: 8px;
+    margin-bottom: 32px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    transition: border-color 0.25s ease-in-out, background-color .25s ease-in-out, color .25s ease-in-out;
+}
+
+.input-box input:hover {
+  border-color: #000;
+}
+
+.input-box input:active {
+  border-color: #4e75ff;
+}
+
+
+.input-box button {
+  width: 75px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #4e75ff;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    transition: background-color .25s ease-in-out, color .25s ease-in-out;
+}
+
+.input-box button:disabled {
+  background-color: #cfcfcf;
+    color: #989898;
+}
+
+.input-box button:hover {
+  background-color: #6c8cff;
+}
+
+
+.timer {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    transition: transform 0.25s ease-in-out;
+}
+
+.field {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value {
+    font-size: 40px;
+      /* line-height: 48px; */
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.label {
+  text-transform: uppercase;
+    line-height: 1.5;
+    color: #2e2f42;
+}
+
+.snackbar-section {
+  padding-top: 100px;
+}
+
+.label-delay {
+  display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .input-delay {
+    outline: none;
+      line-height: 1.5;
+      letter-spacing: .04em;
+      padding: 8px 16px;
+      color: #2e2f42;
+      border-color: gray;
+      border-radius: 4px;
+      width: 360px;
+      height: 40px;
+      transition: border-color .25s ease-in-out;
+  }
+
+  .input-delay:hover {
+    border-color: #000;
+  }
+
+  .input-delay:focus {
+    border-color: #4e75ff;
+  }
+
+  .radio-choose {
+    width: 360px;
+      height: 78px;
+      margin-bottom: 24px;
+      border-radius: 4px;
+      border-color: gray;
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      align-items: center;
+      transition: border-color .25s ease-in-out;
+  }
+
+  .radio-choose:hover {
+    border-color: #000;
+  }
+
+  .btn-form {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      width: 360px;
+      height: 40px;
+      background-color: #4e75ff;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: .04em;
+      color: #fff;
+      transition: background-color .25s ease-in-out;
+  }
+
+  .btn-form:hover, .btn-form:focus {
+    background-color: #6c8cff;
+  }
